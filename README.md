@@ -11,11 +11,11 @@ in our case we'll be using a Self Signed Certificate
 And For this we'll be using **CloudFlare SSL**
 
 excute this commands : 
-
-$ cd Admission-Controller-Kubernetes/ 
+```sh
+cd Admission-Controller-Kubernetes/ 
 #
 $ docker run -it --rm -v ${PWD}:/work -w /work debian bash
-#
+```
 $ apt-get update && apt-get install -y curl &&
  curl -L https://github.com/cloudflare/cfssl/releases/download/v1.5.0/cfssl_1.5.0_linux_amd64 -o /usr/local/bin/cfssl && \
  curl -L https://github.com/cloudflare/cfssl/releases/download/v1.5.0/cfssljson_1.5.0_linux_amd64 -o /usr/local/bin/cfssljson && \
